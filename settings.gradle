@@ -1,0 +1,11 @@
+pluginManagement {
+    repositories {
+        flatDir { dirs 'run/mods'}
+        jcenter()
+        maven {
+            name = 'Fabric'
+            url = 'https://maven.fabricmc.net/'
+        }
+        gradlePluginPortal()
+    }
+}

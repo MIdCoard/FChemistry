@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "fchemistry",
+  "version": "${version}",
+  "name": "FChemistry",
+  "description": "Chemistry is everywhere!",
+  "authors": [
+    {
+      "name": "MidCoard",
+      "contact": {
+        "github": "MidCoard",
+        "website": "https://focess.top"
+      }
+    }
+  ],
+  "contact": {},
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "top.focess.fchemistry.client.FChemistryClient"
+    ],
+    "main": [
+      "top.focess.fchemistry.FChemistry"
+    ],
+    "server": ["top.focess.fchemistry.server.FChemistryServer"]
+  },
+  "mixins": [
+    "FChemistry.mixins.json"
+  ],
+  "depends": {
+    "fabric-key-binding-api-v1": "*",
+    "fabricloader": ">=0.11.6",
+    "fabric": "*",
+    "minecraft": "1.17"
+  }
+}
